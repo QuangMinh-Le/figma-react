@@ -1,0 +1,288 @@
+/* General Set-up */
+:root{
+    --clr-pink: #FF64AE;
+    --clr-blue: rgb(9, 17, 86);
+    --clr-gray: #8B8B8B;
+    --clr-bg: #FFFFFF;
+    ;
+    
+    --ff-all: 'Poppins', sans-serif;
+    
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--clr-bg);  
+    font-family: var(--ff-all); 
+}
+.container {
+    max-width: 1920;
+
+}
+h1,h2,h3,h4,h5,h6, p{
+    font-family: var(--ff-all);
+}
+
+/* Styles */
+
+.Slider {
+    position: relative;
+    margin-top: 250px;
+    transition: all ease .5s;
+}
+
+.frames {
+    margin-top: 180px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transition: all ease .5s;
+}
+
+.frame1 {
+    width: 430px;
+    box-sizing: border-box;
+    transition: all ease .5s;
+}
+
+.frame2 img{
+    width: 601.5px;
+    margin-left: 66px;
+    transition: all ease .5s;
+}
+
+
+.frame1 h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 125%;
+    color: var(--clr-blue);
+    transition: all ease .5s;
+}
+
+.frame1 p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: var(--clr-blue);
+    padding-top: 20px;
+    transition: all ease .5s;
+}
+
+.frame1 .detailsButton {
+    padding-top: 40px;
+    transition: all ease .5s;
+}
+
+.frame1 .detailsButton button {
+    width: 200px;
+    height: 58.36px;
+    border-radius: 50px;
+    background-color: var(--clr-pink);
+    border: 1px solid var(--clr-pink);
+    color: white;
+    font-family: var(--ff-all);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: all ease .5s;
+}
+
+.frame1 .detailsButton button:hover {
+
+    color: #ffe0e0;
+    box-shadow: #f36eae 0px 20px 30px -10px;
+}
+
+.slidesButton {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+    height: 8.15px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    transition: all ease .5s;
+
+}
+
+.slidesButton > div{
+    background-color: var(--clr-gray);
+    z-index: 10;
+    width: 14.82px;
+    height: 3.09px;
+    margin: 2px;
+    border-radius: 50px;
+}
+
+.slidesButton > div:nth-child(2){
+    background-color: var(--clr-blue);
+}
+
+@media (max-width: 1200px) {
+    
+    .Slider {
+        margin-top: 200px;
+    }
+    
+    .frames {
+        margin-top: 180px;
+    }
+    
+    .frame1 {
+        width: 430px;
+    }
+    
+    .frame2 img{
+        width: 500px;
+        margin-left: 56px;
+    }
+    
+    .frame1 h1 {
+        font-size: 40px;
+    }
+    
+    .frame1 p {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.1em;
+        padding-top: 10px;
+    }
+    
+    .frame1 .detailsButton {
+        padding-top: 30px;
+    }
+    
+    .frame1 .detailsButton button {
+        width: 170px;
+        height: 48.36px;
+        border-radius: 40px;
+        border: 1px solid var(--clr-pink);
+        font-size: 14px;
+        letter-spacing: 0.1em;
+    }
+    
+    .slidesButton {
+        margin-top: 100px;
+        height: 8.15px;
+    }
+    
+    .slidesButton > div{
+        width: 14.82px;
+        height: 3.09px;
+        margin: 2px;
+    }
+}
+
+@media (max-width: 1000px) {
+    
+    .Slider {
+        margin-top: 150px;
+    }
+    
+    .frames {
+        margin-top: 180px;
+    }
+    
+    .frame1 {
+        width: 430px;
+    }
+    
+    .frame2 img{
+        width: 350px;
+        margin-left: 56px;
+    }
+    
+    .frame1 h1 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 850px) {
+    
+    .Slider {
+        margin-top: 150px;
+    }
+    
+    .frames {
+        margin-top: 180px;
+    }
+    
+    .frame1 {
+        width: 300px;
+    }
+    
+    .frame2 img{
+        width: 300px;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    
+    .Slider {
+        margin-top: 150px;
+    }
+    
+    .frames {
+        margin-top: 180px;
+    }
+    
+    .frame1 {
+        width: 400px;
+        text-align: center;
+    }
+    
+    .frame2 img{
+        display: none;
+    }
+    
+    .frame1 h1 {
+        font-size: 35px;
+    }
+    
+    .frame1 p {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.1em;
+        padding-top: 10px;
+    }
+    
+    .frame1 .detailsButton {
+        padding-top: 30px;
+    }
+    
+    .frame1 .detailsButton button {
+        width: 170px;
+        height: 48.36px;
+        border-radius: 40px;
+        border: 1px solid var(--clr-pink);
+        font-size: 14px;
+        letter-spacing: 0.1em;
+    }
+    
+    .slidesButton {
+        margin-top: 100px;
+        height: 8.15px;
+    }
+    
+    .slidesButton > div{
+        width: 14.82px;
+        height: 3.09px;
+        margin: 2px;
+    }
+}

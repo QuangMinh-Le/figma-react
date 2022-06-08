@@ -1,0 +1,311 @@
+
+/* General Set-up */
+
+:root{
+    --clr-pink: #FF64AE;
+    --clr-blue: rgb(9, 17, 86);
+    --clr-gray: #8B8B8B;
+    --clr-bg: #FFFFFF;
+    ;
+    
+    --ff-all: 'Poppins', sans-serif;
+    
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--clr-bg);  
+    font-family: var(--ff-all); 
+}
+.container {
+    max-width: 1920;
+
+}
+h1,h2,h3,h4,h5,h6, p{
+    font-family: var(--ff-all);
+}
+
+
+/* Styles */
+
+.Header {
+    position: fixed;
+    top:0;
+    justify-content: center;   
+    align-items: center;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    z-index: 30;
+}
+
+.headerBlur {
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 100px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: all ease .5s;
+    z-index: 29;
+}
+
+.headerBlurChanged {
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 100px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background: rgba(229, 234, 255);
+    transition: all ease .5s;
+    z-index: 29;
+}
+
+.Logo {
+    width: 258px;
+    box-sizing: border-box;
+    transition: all ease .5s;
+}
+
+.Logo img{
+    width: 258px;
+    height: 63px;
+    transition: all ease .5s;
+    width: 100%;
+}
+
+.Logo img:hover {
+    width: 280px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: all ease .5s;
+}
+
+.Menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+}
+
+header ul li{
+    list-style: none;
+    margin: 0px 30px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--ff-all);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    transition: all ease .5s;
+}
+
+header ul span {
+    color: #41487F;
+    transition: all ease .5s;
+}
+header ul span:hover {
+        transition: all ease .5s;
+}
+
+header ul li a:hover{
+    text-decoration: underline;
+    color: var(--clr-pink);
+    transition: all ease .5s;
+}
+
+header button {
+    background: var(--clr-pink);
+    border-radius: 50px;
+    border: .3px solid var(--clr-pink);
+    width: 158px;
+    height: 52px;
+    margin-left: 45px;
+    cursor: pointer;
+    transition: all ease .4s;
+}
+
+header button p{
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+}
+
+header button:hover{
+    color: #ffe0e0;
+    box-shadow: #f36eae 0px 20px 30px -10px;
+}
+
+header button:active{
+    background: var(--clr-pink);
+
+}
+
+/*Phim tat mo Header*/
+
+.checkBtn {
+    font-size: 37px;
+    color: var(--clr-blue);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    transition: .6s;
+}
+
+.checkBtn:hover {
+  text-shadow: -2px -2px var(--clr-pink);
+  transition: .6s;
+}
+#check {
+    display: none;
+}
+
+/* Responsive header */
+
+@media (max-width: 1200px) {
+    .Logo {
+        width: 258px;
+        position: fixed;
+        box-sizing: border-box;
+        transition: all ease .5s;
+        left: 70px;
+    }
+    
+    .Logo img{
+        width: 200px;
+        transition: all ease .5s;
+    }
+    
+    .Logo img:hover {
+        width: 210px;
+    }
+    
+    .checkBtn {
+        display: block;
+        position: fixed;
+        right: 70px;
+    }
+    header ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(229, 234, 255, 0.5);
+        backdrop-filter: blur(8px);
+        top: 100px;
+        left: -100%;
+        padding-top: 30px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: all 1s;
+        z-index: 30;
+    }
+    .contactBtn button{
+        margin-left: 0;
+    }
+
+    header ul li{
+        display: block;
+        margin: 100px 0;
+        line-height: 100px;
+    }
+    header ul li a {
+        color: var(--clr-blue);
+    }
+    header ul li a:hover {
+        font-size: 1.2rem;
+    }
+
+    #check:checked ~ ul{
+        left: 0%;
+    } 
+    .checkBtn {
+      float: right;
+    }
+    
+    header ul li{
+        list-style: none;
+        margin: 0px 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .Logo {
+        width: 258px;
+    }
+    
+    .Logo img{
+        width: 200px;
+        transition: all ease .5s;
+    }
+    
+    .Logo img:hover {
+        width: 210px;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+    .Logo {
+        width: 180px;
+    }
+    
+    .Logo img{
+        width: 150px;
+        transition: all ease .5s;
+    }
+    
+    .Logo img:hover {
+        width: 160px;
+    }
+    header button {
+        border-radius: 50px;
+        width: 100px;
+        height: 52px;
+        margin-left: 10px;
+    }
+    
+    header button p{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: 0.1em;
+    }
+    
+    header button:hover{
+        color: #ffe0e0;
+        box-shadow: #f36eae 0px 20px 30px -10px;
+    }
+    
+    header button:active{
+        background: var(--clr-pink);
+    
+    }
+
+}

@@ -1,0 +1,396 @@
+/* General Set-up */
+
+:root{
+    --clr-pink: #FF64AE;
+    --clr-blue: rgb(9, 17, 86);
+    --clr-gray: #8B8B8B;
+    --clr-bg: #FFFFFF;
+    ;
+    
+    --ff-all: 'Poppins', sans-serif;
+    
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--clr-bg);  
+    font-family: var(--ff-all); 
+}
+.container {
+    max-width: 1920;
+
+}
+h1,h2,h3,h4,h5,h6, p{
+    font-family: var(--ff-all);
+}
+
+/* Styles */
+
+.AboutUs {
+    position: relative;
+    margin-top: 134.44px;
+    display: flex;
+    justify-content: center;
+}
+
+.contentAboutUs {
+    width: 665px;
+}
+
+.contentAboutUs h2{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+    color: var(--clr-pink);
+}
+
+.contentAboutUs h3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 125%;
+    color: var(--clr-blue);
+    margin-top: 10px;
+}
+
+.contentAboutUs p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: var(--clr-gray);
+    margin-top: 20px;
+    width: 483px;
+}
+
+.buttonAboutUs {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.buttonAboutUs button{
+    width: 200px;
+    height: 58.36px;
+    box-shadow: 0px 17px 22px #FFEDF6;
+    border-radius: 50px;
+    background-color: var(--clr-pink);
+    border: 1px solid var(--clr-pink);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    transition: all ease .5s;
+    cursor: pointer;
+}
+
+.buttonAboutUs button:hover{
+    color: #ffe0e0;
+    box-shadow: #f36eae 0px 20px 30px -10px;
+}
+
+.watchVid {
+    display: flex;
+    align-items: center;
+    width: 257px;
+    height: 49px;  
+    padding-left: 44px; 
+    cursor: pointer;
+    transition: all ease .5s;
+    background: transparent;
+}
+
+
+.watchVid p {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+    letter-spacing: 0.1em;
+    padding-left: 13px;
+}
+
+.imageAboutUs img {
+    position: relative;
+    width: 476px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 50px 25px #FFFFFF;
+    border-radius: 50px;
+    z-index: 10;
+    transition: all ease .5s;
+}
+
+/*Responsive About-us*/
+
+@media (max-width: 1295px) {
+    .imageAboutUs img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .AboutUs {
+        margin-top: 134.44px;
+    }
+    
+    .contentAboutUs {
+        width: 565px;
+    }
+    
+    .contentAboutUs h2{
+        font-size: 16px;
+    }
+    
+    .contentAboutUs h3{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    
+    .contentAboutUs p {
+        font-weight: 400;
+        font-size: 15px;
+        margin-top: 20px;
+        width: 450px;
+    }
+    
+    .buttonAboutUs {
+        margin-top: 40px;
+    }
+    
+    .buttonAboutUs button{
+        width: 150px;
+        height: 48.36px;
+        border-radius: 40px;
+        font-size: 14px;
+    }
+    
+    .buttonAboutUs button:hover{
+        color: #ffe0e0;
+        box-shadow: #f36eae 0px 15px 25px -10px;
+    }
+    
+    .watchVid {
+        width: 257px;
+        height: 49px;  
+        padding-left: 44px;
+    }
+    
+    .watchVid p {
+        font-weight: 600;
+        font-size: 14px;
+        padding-left: 13px;
+        margin-top: 0;
+    }
+    
+    .imageAboutUs img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .AboutUs {
+        margin-top: 134.44px;
+    }
+    
+    .contentAboutUs {
+        width: 400px;
+    }
+    
+    .contentAboutUs h2{
+        font-size: 16px;
+    }
+    
+    .contentAboutUs h3{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    
+    .contentAboutUs p {
+        font-weight: 400;
+        font-size: 12px;
+        margin-top: 20px;
+        width: 350px;
+    }
+    
+    .buttonAboutUs {
+        margin-top: 40px;
+    }
+    
+    .buttonAboutUs button{
+        width: 150px;
+        height: 48.36px;
+        border-radius: 40px;
+        font-size: 14px;
+    }
+    
+    .buttonAboutUs button:hover{
+        color: #ffe0e0;
+        box-shadow: #f36eae 0px 15px 25px -10px;
+    }
+    
+    .watchVid {
+        width: 257px;
+        height: 49px;  
+        padding-left: 44px;
+    }
+    
+    .watchVid p {
+        font-weight: 600;
+        font-size: 14px;
+        padding-left: 13px;
+        margin-top: 0;
+    }
+    
+    .imageAboutUs img {
+        width: 350px;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .AboutUs {
+        margin-top: 134.44px;
+    }
+    
+    .contentAboutUs {
+        width: 350px;
+    }
+    
+    .contentAboutUs h2{
+        font-size: 16px;
+    }
+    
+    .contentAboutUs h3{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    
+    .contentAboutUs p {
+        font-weight: 400;
+        font-size: 12px;
+        margin-top: 20px;
+        width: 330px;
+    }
+    
+    .buttonAboutUs {
+        margin-top: 20px;
+    }
+    
+    .buttonAboutUs button{
+        width: 200px;
+        height: 48.36px;
+        border-radius: 40px;
+        font-size: 14px;
+    }
+    
+    .buttonAboutUs button:hover{
+        color: #ffe0e0;
+        box-shadow: #f36eae 0px 10px 20px -5px;
+    }
+    
+    .watchVid {
+        width: 257px;
+        height: 49px;  
+        padding-left: 14px;
+    }
+    
+    .watchVid p {
+        font-weight: 600;
+        font-size: 12px;
+        padding-left: 13px;
+        width: 110px;
+        margin-top: 0;
+    }
+    
+    .imageAboutUs img {
+        width: 350px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .AboutUs {
+        margin-top: 134.44px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contentAboutUs {
+        width: 80%;
+        text-align: center;
+    }
+    
+    .contentAboutUs h2{
+        font-size: 16px;
+    }
+    
+    .contentAboutUs h3{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    
+    .contentAboutUs p {
+        font-weight: 400;
+        font-size: 12px;
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    
+    .buttonAboutUs {
+        margin-top: 30px;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+    .buttonAboutUs button{
+        width: 200px;
+        height: 48.36px;
+        border-radius: 40px;
+        font-size: 14px;
+    }
+    
+    .buttonAboutUs button:hover{
+        color: #ffe0e0;
+        box-shadow: #f36eae 0px 10px 20px -5px;
+    }
+    
+    .watchVid {
+        width: 257px;
+        height: 49px;  
+        padding-left: 14px;
+        display: flex;
+        margin-top: 0;
+
+    }
+    
+    .watchVid p {
+        font-weight: 600;
+        font-size: 14px;
+        width: 90%;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .imageAboutUs img {
+        align-self: center;
+        box-shadow: none;
+    }
+}

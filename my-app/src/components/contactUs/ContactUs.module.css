@@ -1,0 +1,350 @@
+/* General Set-up */
+
+:root{
+    --clr-pink: #FF64AE;
+    --clr-blue: rgb(9, 17, 86);
+    --clr-gray: #8B8B8B;
+    --clr-bg: #FFFFFF;
+    ;
+    
+    --ff-all: 'Poppins', sans-serif;
+    
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--clr-bg);  
+    font-family: var(--ff-all); 
+}
+.container {
+    max-width: 1920;
+
+}
+h1,h2,h3,h4,h5,h6, p{
+    font-family: var(--ff-all);
+}
+
+/* Styles */
+
+.Contact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 144px;
+}
+
+.infoContactUs {
+    width: 36.5%;
+}
+
+.imageContactUs img{
+    width: 520px;
+    margin-right: 100px;
+}
+
+.Contact h2{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+    color: var(--clr-pink);
+}
+
+.Contact h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 125%;
+    color: var(--clr-blue);
+    margin: 12px 0;
+}
+
+.Contact p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: var(--clr-gray);
+    margin-bottom: 44px;
+}
+
+/* Form input */
+
+.inputName input {
+    width: 40%;
+    height: 61.58px;
+}
+
+.inputName >:nth-child(1) {
+    margin-right: 30.58px;
+}
+
+.inputsContactUs {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputsContactUs input, .inputsContactUs textarea{
+    margin-bottom: 38.32px;
+    font-family: var(--ff-all);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    background: #FFFFFF;
+    color: var(--clr-gray);
+    border: 1px solid #D9DDFE;
+    border-radius: 15px;
+    height: 61.58px;
+    padding-left: 24px;
+}
+
+.inputsContactUs textarea::placeholder {
+    padding-top: 10px;
+}
+
+.infoContactUs button{
+    width: 248px;
+    height: 58px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: var(--ff-all);
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: white;
+    border: none;
+    background: var(--clr-pink);
+    box-shadow: 0px 17px 22px #FFEDF6;
+    border-radius: 50px;
+    transition: all ease .4s;
+    cursor: pointer;
+}
+
+.infoContactUs button:hover {
+    color: #ffe0e0;
+    box-shadow: #f36eae 0px 20px 30px -10px;
+}
+
+/* Responsive Contact-us */
+
+@media (max-width: 1200px) {
+    .Contact {
+        margin-top: 100px;
+    }
+    
+    .infoContactUs {
+        width: 36.5%;
+    }
+    
+    .imageContactUs img{
+        width: 450px;
+        margin-right: 80px;
+    }
+    
+    .Contact h2{
+        font-size: 16px;
+    }
+    
+    .Contact h3 {
+        font-size: 30px;
+        margin: 12px 0;
+    }
+    
+    .Contact p {
+        font-size: 14px;
+        margin-bottom: 34px;
+    }
+    
+    .inputName input {
+        width: 100%;
+        height: 61.58px;
+    }
+    
+    .inputsContactUs {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .inputsContactUs input, .inputsContactUs textarea{
+        margin-bottom: 30px;
+        font-size: 14px;
+        border-radius: 15px;
+        height: 61.58px;
+        padding-left: 24px;
+    }
+    
+    .inputsContactUs textarea::placeholder {
+        padding-top: 10px;
+    }
+    
+    .infoContactUs button{
+        width: 220px;
+        height: 50px;
+        font-size: 14px;
+        border-radius: 40px;
+    }
+    
+    .infoContactUs button:hover {
+        color: #ffe0e0;
+        box-shadow: #f36eae 0px 15px 25px -5px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .Contact {
+        margin-top: 100px;
+    }
+    
+    .infoContactUs {
+        width: 36.5%;
+    }
+    
+    .imageContactUs img{
+        width: 450px;
+        margin-right: 20px;
+    }
+    
+    .Contact h2{
+        font-size: 16px;
+    }
+    
+    .Contact h3 {
+        font-size: 25px;
+        margin: 12px 0;
+    }
+    
+    .Contact p {
+        font-size: 12px;
+        margin-bottom: 24px;
+    }
+    
+    .inputName input {
+        width: 100%;
+        height: 41.58px;
+    }
+    
+    .inputsContactUs {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .inputsContactUs input, .inputsContactUs textarea{
+        margin-bottom: 20px;
+        font-size: 12px;
+        border-radius: 12px;
+        height: 41.58px;
+        padding: 0 24px;
+    }
+    
+    .inputsContactUs textarea::placeholder {
+        padding-top: 10px;
+    }
+    
+    .infoContactUs button{
+        width: 220px;
+        height: 50px;
+        font-size: 14px;
+        border-radius: 40px;
+    }
+    
+    .infoContactUs button:hover {
+        color: #ffe0e0;
+        box-shadow: #f36eae 0px 15px 25px -5px;
+    }
+}
+
+@media (max-width: 850px) {
+    .Contact {
+        margin-top: 220px;
+    }
+    
+    .infoContactUs {
+        width: 36.5%;
+    }
+    
+    .imageContactUs img{
+        width: 350px;
+    }
+    
+    .Contact h2{
+        font-size: 16px;
+    }
+    
+    .Contact h3 {
+        font-size: 22px;
+        margin: 12px 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .Contact {
+        margin-top: 300px;
+    }
+    
+    .infoContactUs {
+        width: 60%;
+    }
+    
+    .imageContactUs img{
+        display: none;
+    }
+    
+    .Contact h2{
+        font-size: 16px;
+    }
+    
+    .Contact h3 {
+        font-size: 22px;
+        margin: 12px 0;
+    }
+    
+    .Contact p {
+        font-size: 12px;
+        margin-bottom: 24px;
+    }
+    
+    .inputName input {
+        width: 100%;
+        height: 41.58px;
+    }
+    
+    .inputsContactUs {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .inputsContactUs input, .inputsContactUs textarea{
+        margin-bottom: 20px;
+        font-size: 12px;
+        border-radius: 12px;
+        height: 41.58px;
+        padding: 0 24px;
+    }
+    
+    .inputsContactUs textarea::placeholder {
+        padding-top: 10px;
+    }
+    
+    .infoContactUs button{
+        width: 220px;
+        height: 50px;
+        font-size: 14px;
+        border-radius: 40px;
+    }
+    
+    .infoContactUs button:hover {
+        color: #ffe0e0;
+        box-shadow: #f36eae 0px 15px 25px -5px;
+    }
+}

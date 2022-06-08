@@ -1,0 +1,361 @@
+/* General Set-up */
+:root{
+    --clr-pink: #FF64AE;
+    --clr-blue: rgb(9, 17, 86);
+    --clr-gray: #8B8B8B;
+    --clr-bg: #FFFFFF;
+    ;
+    
+    --ff-all: 'Poppins', sans-serif;
+    
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--clr-bg);  
+    font-family: var(--ff-all); 
+}
+.container {
+    max-width: 1920;
+
+}
+h1,h2,h3,h4,h5,h6, p{
+    font-family: var(--ff-all);
+}
+
+
+/* Styles */
+
+.Service {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 120px;
+    box-sizing: border-box;
+}
+
+.contentService {
+    width: 848px;
+    text-align: center;
+    margin: auto;
+}
+
+.contentService h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+    color: var(--clr-pink);
+}
+
+.contentService h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 125%;
+    color: var(--clr-blue);
+    width: 450px;
+    margin: 12px auto;
+}
+
+.contentService p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: var(--clr-gray);
+}
+
+.boxSection {
+    display: flex;
+    margin: auto;
+    margin-top: 82px;
+}
+
+.boxSection .left,.boxSection .mid,.boxSection .right{
+    position: relative;
+    background-color: white;
+    width: 343px;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 50px 25px #F7F7FF;
+    border-radius: 42px;
+    height: 458px;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxSection .mid , .boxSection .right {
+    margin-left: 56px;
+}
+.boxImg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+.boxSection img {
+    width: 166px;
+}
+
+.boxSection h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 125%;
+    color: var(--clr-blue);
+    text-align: center;
+}
+
+.boxSection p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: var(--clr-gray);
+    margin: auto;
+    margin-top: 15px;
+    width: 274px;
+} 
+
+/* Responsive Core Service */
+
+@media (max-width: 1200px) {
+    .Service {
+        margin-top: 100px;
+    }
+    
+    .contentService {
+        width: 848px;
+    }
+    
+    .contentService h2 {
+        font-size: 16px;
+    }
+    
+    .contentService h3 {
+        font-size: 32px;
+        width: 450px;
+        margin: 12px auto;
+    }
+    
+    .contentService p {
+        font-size: 13px;
+    }
+    
+    .boxSection {
+        margin-top: 62px;
+    }
+    
+    .boxSection .left,.boxSection .mid,.boxSection .right{
+        position: relative;
+        background-color: white;
+        width: 300px;
+        border-radius: 42px;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .boxSection .mid , .boxSection .right {
+        margin-left: 46px;
+    }
+    
+    .boxImg {
+        margin: 20px 0;
+    }
+
+    .boxSection img {
+        width: 166px;
+        margin: 0px 0;
+    }
+    
+    .boxSection h4 {
+        font-style: normal;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .boxSection p {
+        font-size: 12px;
+        text-align: center;
+        margin-top: 15px;
+        width: 254px;
+    } 
+}
+@media (max-width: 1000px) {
+    .Service {
+        margin-top: 100px;
+    }
+    
+    .contentService {
+        width: 848px;
+    }
+    
+    .contentService h2 {
+        font-size: 16px;
+    }
+    
+    .contentService h3 {
+        font-size: 32px;
+        width: 450px;
+        margin: 12px auto;
+    }
+    
+    .contentService p {
+        font-size: 13px;
+    }
+    
+    .boxSection {
+        margin-top: 62px;
+    }
+    
+    .boxSection .left,.boxSection .mid,.boxSection .right{
+        width: 250px;
+        border-radius: 32px;
+        height: 400px;
+    }
+    
+    .boxSection .mid , .boxSection .right {
+        margin-left: 46px;
+    }
+    
+    .boxImg {
+        margin: 20px 0;
+    }
+
+    .boxSection img {
+        width: 166px;
+        margin: 0px 0;
+    }
+    
+    .boxSection h4 {
+        font-size: 18px;
+    }
+    
+    .boxSection p {
+        width: 80%;
+    } 
+}
+
+@media (max-width: 850px) {
+    .Service {
+        margin-top: 100px;
+    }
+    
+    .contentService {
+        width: 648px;
+    }
+    
+    .contentService h2 {
+        font-size: 16px;
+    }
+    
+    .contentService h3 {
+        font-size: 30px;
+        width: 450px;
+        margin: 12px auto;
+    }
+    
+    .contentService p {
+        font-size: 13px;
+    }
+    
+    .boxSection {
+        margin-top: 62px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .boxSection .left,.boxSection .mid,.boxSection .right{
+        width: 80%;
+        border-radius: 32px;
+        height: 350px;
+    }
+    
+    .boxSection .mid , .boxSection .right {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    .Service {
+        margin-top: 100px;
+    }
+    
+    .contentService {
+        width: 70%;
+    }
+    
+    .contentService h2 {
+        font-size: 16px;
+    }
+    
+    .contentService h3 {
+        font-size: 25px;
+        width: 90%;
+        margin: 12px auto;
+    }
+    
+    .contentService p {
+        font-size: 13px;
+    }
+    
+    .boxSection {
+        margin-top: 62px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .boxSection .left,.boxSection .mid,.boxSection .right{
+        position: relative;
+        background-color: white;
+        width: 80%;
+        border-radius: 32px;
+        height: 350px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .boxSection .mid , .boxSection .right {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    
+    .boxImg {
+        margin: 20px 0;
+    }
+
+    .boxSection img {
+        width: 166px;
+        margin: 0px 0;
+    }
+    
+    .boxSection h4 {
+        font-style: normal;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .boxSection p {
+        font-size: 12px;
+        text-align: center;
+        margin-top: 15px;
+        width: 80%;
+    } 
+}
