@@ -1,0 +1,153 @@
+/* General Set-up */
+
+:root{
+    --clr-pink: #FF64AE;
+    --clr-blue: rgb(9, 17, 86);
+    --clr-light-blue: #D8DCFF;
+    --clr-gray: #8B8B8B;
+    --clr-bg: #FFFFFF;
+
+    
+    --ff-all: 'Poppins', sans-serif;
+    
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--clr-bg);  
+    font-family: var(--ff-all); 
+}
+.container {
+    max-width: 1920;
+
+}
+h1,h2,h3,h4,h5,h6, p{
+    font-family: var(--ff-all);
+}
+
+/* ######################################################################### */
+/* Styles */
+
+.container {
+    background-image: url(../../img/Team-Slogan-Image.png);
+    height: 529px;
+    background-size: cover;
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    text-align: center;
+}
+
+.content h3 {
+    width: 80%;
+    font-style: normal;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 125%;
+    color: white;
+}
+
+.content p {
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: var(--clr-light-blue);
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+
+    .container {
+        margin-top: 100px;
+    }
+
+    .wrapper {
+        width: 80%;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+}
+
+
+
+@media (max-width: 800px) {
+
+    .container {
+        margin-top: 150px;
+    }
+
+    .wrapper {
+        display: flex;
+        width: 80%;
+    }
+
+    .content {
+        width: 80%;
+    }
+
+    .content h3 {
+        font-size: 30px;
+    }
+
+    .content p {
+        margin-top: 30px;
+        font-size: 14px;
+    }  
+}
+
+
+
+@media (max-width: 650px) {
+    .container {
+        margin-top: 100px;
+        height: 400px;
+    }
+
+
+    .content h3 {
+        font-size: 25px;
+    }
+
+    .content p {
+        margin-top: 30px;
+        font-size: 12px;
+    }
+}
+

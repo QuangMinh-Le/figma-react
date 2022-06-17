@@ -1,0 +1,355 @@
+
+/* General Set-up */
+
+:root{
+    --clr-pink: #FF64AE;
+    --clr-blue: rgb(9, 17, 86);
+    --clr-gray: #8B8B8B;
+    --clr-bg: #FFFFFF;
+    ;
+    
+    --ff-all: 'Poppins', sans-serif;
+    
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--clr-bg);  
+    font-family: var(--ff-all); 
+}
+.container {
+    max-width: 1920;
+
+}
+h1,h2,h3,h4,h5,h6, p{
+    font-family: var(--ff-all);
+}
+
+
+/* Styles */
+
+.Header {
+    position: fixed;
+    top:0;
+    justify-content: center;   
+    align-items: center;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    z-index: 30;
+}
+
+.headerBlur {
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 100px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: all ease .5s;
+    z-index: 29;
+}
+
+.headerBlurChanged {
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 100px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background: var(--clr-blue);
+    opacity: .8;
+    transition: all ease .5s;
+    z-index: 29;
+}
+
+.Logo {
+    width: 258px;
+    box-sizing: border-box;
+    transition: all ease .5s;
+}
+
+.Logo img{
+    width: 258px;
+    height: 63px;
+    transition: all ease .5s;
+    width: 100%;
+}
+
+.Logo img:hover {
+    width: 280px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: all ease .5s;
+}
+
+.Menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.navChecked {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.navChecked li{
+    list-style: none;
+    margin: 0px 30px;
+}
+
+.navChecked li a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--ff-all);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    transition: all ease .5s;
+}
+
+.navChecked span {
+    color: #41487F;
+    transition: all ease .5s;
+}
+.navChecked span:hover {
+        transition: all ease .5s;
+}
+
+.navChecked li a:hover{
+    text-decoration: underline;
+    color: var(--clr-pink);
+    transition: all ease .5s;
+}
+
+header button {
+    background: var(--clr-pink);
+    border-radius: 50px;
+    border: .3px solid var(--clr-pink);
+    width: 158px;
+    height: 52px;
+    margin-left: 45px;
+    cursor: pointer;
+    transition: all ease .4s;
+}
+
+header button p{
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+}
+
+header button:hover{
+    color: #ffe0e0;
+    box-shadow: #f36eae 0px 20px 30px -10px;
+}
+
+header button:active{
+    background: var(--clr-pink);
+
+}
+
+/*Phim tat mo Header*/
+
+.checkBtn {
+    font-size: 37px;
+    color: white;
+    float: right;
+    line-height: 0;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    transition: .6s;
+    background: none;
+    border: none;
+}
+
+.checkBtn:hover {
+    box-shadow: none;
+  text-shadow: -2px -2px var(--clr-pink);
+  transition: .6s;
+}
+.checkBtn:active {
+    box-shadow: none;
+    background: none;
+
+}
+.check {
+    display: none;
+}
+
+/* Responsive header */
+
+@media (max-width: 1200px) {
+    .Logo {
+        position: fixed;
+        box-sizing: border-box;
+        transition: all ease .5s;
+        left: 70px;
+    }
+    
+    .Logo img{
+        transition: all ease .5s;
+    }
+    
+    .Logo img:hover {
+        width: 210px;
+    }
+    
+    .checkBtn {
+        display: block;
+        position: fixed;
+        right: 70px;
+    }
+    .navChecked {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(229, 234, 255, 0.5);
+        backdrop-filter: blur(8px);
+        top: 100px;
+        left: 0;
+        padding-top: 30px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: all 1s;
+        z-index: 30;
+    }
+
+    .navCheck {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(229, 234, 255, 0.5);
+        backdrop-filter: blur(8px);
+        top: 100px;
+        left: -100%;
+        padding-top: 30px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: all 1s;
+        z-index: 30;
+    }
+
+    .navCheck li{
+        display: block;
+        line-height: 100px;
+    }
+    .navCheck li a {
+        color: var(--clr-blue);
+        text-decoration: none;
+        font-family: var(--ff-all);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.1em;
+        transition: all ease .5s;
+    }
+    .navCheck li a:hover {
+        font-size: 1.2rem;
+    }
+    
+    .contactBtn button{
+        margin-left: 0;
+    }
+
+    .navChecked li{
+        display: block;
+        margin: 100px 0;
+        line-height: 100px;
+    }
+    .navChecked li a {
+        color: var(--clr-blue);
+    }
+    .navChecked li a:hover {
+        font-size: 1.2rem;
+    }
+
+    .checkBtn {
+      float: right;
+    }
+    
+    .navChecked li{
+        list-style: none;
+        margin: 0px 30px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    
+    .Logo img{
+        transition: all ease .5s;
+    }
+    
+    .Logo img:hover {
+        width: 210px;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+    .Logo {
+        width:200px;
+    }
+    
+    .Logo img{
+        width: 200px;
+        height: 50px;
+        transition: all ease .5s;
+    }
+    
+    .Logo img:hover {
+        width: 160px;
+    }
+
+    .checkBtn{
+        margin: 0;
+        margin-right: -40px;
+    }
+
+    header button {
+        border-radius: 50px;
+        width: 100px;
+        height: 52px;
+        margin-left: 10px;
+    }
+    
+    header button p{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: 0.1em;
+    }
+    
+    header button:hover{
+        color: #ffe0e0;
+        box-shadow: #f36eae 0px 20px 30px -10px;
+    }
+    
+    header button:active{
+        background: var(--clr-pink);
+    
+    }
+
+}

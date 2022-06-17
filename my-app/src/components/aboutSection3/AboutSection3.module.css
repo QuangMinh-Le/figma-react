@@ -1,0 +1,199 @@
+/* General Set-up */
+
+:root{
+    --clr-pink: #FF64AE;
+    --clr-blue: rgb(9, 17, 86);
+    --clr-light-blue: #D8DCFF;
+    --clr-gray: #8B8B8B;
+    --clr-bg: #FFFFFF;
+
+    
+    --ff-all: 'Poppins', sans-serif;
+    
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--clr-bg);  
+    font-family: var(--ff-all); 
+}
+.container {
+    max-width: 1920;
+
+}
+h1,h2,h3,h4,h5,h6, p{
+    font-family: var(--ff-all);
+}
+
+/* Styles */
+
+.container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    margin-top: 150px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+    width: 80%;
+}
+
+.content {
+    width: 65%;
+}
+
+.content h2{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+    color: var(--clr-pink);
+}
+
+.content h3{
+    margin-top:15px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 125%;
+    color: var(--clr-blue);
+}
+
+.content p{
+    margin-top:15px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: var(--clr-gray);
+}
+
+.playback {
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.playback .background {
+    width: 100%;
+}
+
+.playback button {
+    background-color: var(--clr-blue);
+    border-radius: 50%;
+    width: 88px;
+    height: 88px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease .5s;
+}
+
+.playback button:hover {
+    background-color: var(--clr-pink);
+}
+
+
+/* ################################################### */
+/* Responsive */
+
+@media (max-width: 1000px) {
+    
+    .wrapper {
+        width: 80%;
+    }
+    .content {
+        width: 75%;
+    }
+    .content h2{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    
+    .content h3{
+        margin-top:15px;
+        font-size: 25px;
+    }
+    
+    .content p{
+        margin-top:10px;
+        font-size: 14px;
+    }
+
+    .playback {
+        margin-top: 30px;
+        width: 100%;
+    }
+    
+    .playback .background {
+        width: 100%;
+    }
+    
+    .playback button {
+        width: 70px;
+        height: 70px;
+        border: none;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .content {
+        width: 100%;
+    }
+    .content h2{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 125%;
+        color: var(--clr-pink);
+    }
+    
+    .content h3{
+        margin-top:15px;
+
+        font-size: 20px;
+    }
+    
+    .content p{
+        margin-top:10px;
+
+        font-size: 12px;
+    }
+    
+
+}

@@ -7,6 +7,8 @@ import FooterTwitter from '../../img/twitter (1).png';
 import FooterLinkedin from '../../img/linkedin-in.png';
 import FooterYoutube from '../../img/youtube.png';
 import FooterInstagram from '../../img/instagram (1).png';
+import FooterBackground from '../../img/Footer BG 1.png';
+import FooterBackground1 from '../../img/Footer BG 2.png';
 
 const Footer = () => {
 
@@ -28,11 +30,11 @@ const Footer = () => {
                 <div className={styles.midFooter}>
                     <h5>Pages</h5>
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Service</a></li>
-                        <li><a href="">Gallery</a></li>
-                        <li><a href="">Team</a></li>
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/service">Service</a></li>
+                        <li><a href="/gallery">Gallery</a></li>
+                        <li><a href="/team">Team</a></li>
                     </ul>
                 </div>
                 <div className={styles.rightFooter}>
@@ -40,8 +42,8 @@ const Footer = () => {
                     <ul>
                         <li><a href="">Terms & conditions</a></li>
                         <li><a href="">Privacy policy</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -49,8 +51,8 @@ const Footer = () => {
             
             <div className={styles.subcontentFooter}>
                 <div className={styles.mediaIcon}>
-                    <a href=""><img src={FooterFacebook} alt="facebook icon"/></a>
-                    <a href=""><img src={FooterTwitter} alt="twitter-icon"/></a>
+                    <a href="https://www.facebook.com/bachasoftware"><img src={FooterFacebook} alt="facebook icon"/></a>
+                    <a href="https://twitter.com/BacHaSoftware"><img src={FooterTwitter} alt="twitter-icon"/></a>
                     <a href=""><img src={FooterLinkedin} alt="linkedin-icon"/></a>
                     <a href=""><img src={FooterYoutube} alt="youtube-icon"/></a>
                     <a href=""><img src={FooterInstagram} alt="instagram-icon"/></a>
@@ -58,6 +60,12 @@ const Footer = () => {
                 <div className={styles.copyright}>
                     <p>&copy; AltDesain Studio 2021 - All right reserved</p>
                 </div>
+            </div>
+            <div className={styles.bgFooter}>
+                <div className={styles.bgFooter0}></div>
+                <img className={styles.bgFooter1} src={FooterBackground} alt="Footer Background 1"/>
+                <img className={styles.bgFooter2} src={FooterBackground1} alt="Footer Background 2"/>
+
             </div>
         </footer>
     </div>

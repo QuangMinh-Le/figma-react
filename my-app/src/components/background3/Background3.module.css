@@ -1,0 +1,67 @@
+
+.bgAboutUs img{
+    position: absolute;
+    width: 948.15px;
+    right: 0px;
+    top: 800px;
+    z-index: -10;
+    transition: all ease .5s;
+}
+.bgContactUs img{
+    position: absolute;
+    width: 1175.73px;
+    left: 0;
+    top: 2900px;
+    z-index: -10;
+    transition: all ease .5s;
+}
+/*Responsive background*/
+
+@media (max-width: 1295px) {
+
+    .bgAboutUs img{
+        top: 1200px;
+    }
+    .bgContactUs img{
+        width: 900px;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+    .bgSlider img{
+        width: 800px;
+    }
+
+    .bgAboutUs img{
+        top: 800px;
+    }
+    .bgContactUs img{
+        width: 600px;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .bgAboutUs img{
+        width: 250px;
+        top:0;
+    }
+    .bgContactUs img{
+        width: 150px;
+        top:0;
+    }
+}
+
+@media (max-width: 800px) {
+
+
+    .bgAboutUs img{
+        width: 250px;
+        top:0;
+    }
+    .bgContactUs img{
+        width: 150px;
+        top:0;
+    }
+}

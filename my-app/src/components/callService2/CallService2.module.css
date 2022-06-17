@@ -1,0 +1,285 @@
+/* General Set-up */
+
+:root{
+    --clr-pink: #FF64AE;
+    --clr-blue: rgb(9, 17, 86);
+    --clr-light-blue: #D8DCFF;
+    --clr-gray: #8B8B8B;
+    --clr-bg: #FFFFFF;
+
+    
+    --ff-all: 'Poppins', sans-serif;
+    
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--clr-bg);  
+    font-family: var(--ff-all); 
+}
+.container {
+    max-width: 1920;
+
+}
+h1,h2,h3,h4,h5,h6, p{
+    font-family: var(--ff-all);
+}
+
+/* ######################################################################### */
+/* Styles */
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 130px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+.left {
+    width: 35%;
+}
+
+.left h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 125%;
+    color: var(--clr-blue);
+}
+
+.left p {
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: var(--clr-gray);
+}
+
+.left span {
+    color: var(--clr-blue);
+}
+
+.right {
+    margin-left: 90px;
+    display: flex;
+    flex-direction:  column;
+    width: 60%;
+}
+
+.right input {
+    height: 73px;
+    width: 80%;
+
+    background: white;
+    border: 1px solid var(--clr-light-blue);
+    border-radius: 25px 0px 0px 25px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color:var(--clr-gray);
+    padding-left: 30px;
+}
+
+.right button {
+    width: 20%;
+    height: 73px;
+    background: var(--clr-pink);
+    border-radius: 0px 25px 25px 0px;
+    border: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.right p {
+    text-align: end;
+    margin-top: 10px;
+
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    color: var(--clr-gray);
+}
+
+.right button img {
+    width: 40%;
+}
+.waveLine {
+    position: absolute;
+    width: 316.98px;
+    top: 3818px;
+    z-index: -10;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 130px;
+    }
+    
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+    .left {
+        width: 35%;
+    }
+    
+    .left h2 {
+        font-size: 30px;
+    }
+    
+    .left p {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    
+    
+    .right {
+        margin-left: 50px;
+        display: flex;
+        flex-direction:  column;
+        width: 60%;
+    }
+    
+    .right input {
+        height: 73px;
+        width: 80%;
+        border-radius: 20px 0px 0px 20px;
+
+        font-size: 16px;
+        padding-left: 30px;
+    }
+    
+    .right button {
+        width: 20%;
+        height: 73px;
+        border-radius: 0px 20px 20px 0px;
+        border: none;
+    }
+    
+    .form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .right p {
+        margin-top: 10px;
+        font-size: 10px;
+        line-height: 18px;
+    }
+    
+    .waveLine {
+        width: 316.98px;
+        top: 3618px;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 130px;
+    }
+    
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+    .left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .left h2 {
+        font-size: 30px;
+    }
+    
+    .left p {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    
+    
+    .right {
+        margin-left: 0px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction:  column;
+        width: 100%;
+    }
+    
+    .right input {
+        height: 63px;
+        width: 100%;
+        border-radius: 20px 0px 0px 20px;
+
+        font-size: 10px;
+        padding-left: 20px;
+    }
+    
+    .right button {
+        width: 20%;
+        height: 63px;
+        border-radius: 0px 20px 20px 0px;
+        border: none;
+    }
+    
+    .form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .right p {
+        margin-top: 10px;
+        font-size:10px;
+        line-height: 15px;
+    }
+    
+    .waveLine {
+        width: 300px;
+        top: 5418px;
+    }
+}

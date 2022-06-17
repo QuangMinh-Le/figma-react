@@ -19,12 +19,7 @@ const Background = () => (
             <div className={styles.bgContactUs}>
                 <img src={BackgroundBubble1} alt="Background Bubble 1"/>
             </div>
-            <div className={styles.bgFooter}>
-                <div className={styles.bgFooter0}></div>
-                <img className={styles.bgFooter1} src={FooterBackground} alt="Footer Background 1"/>
-                <img className={styles.bgFooter2} src={FooterBackground1} alt="Footer Background 2"/>
 
-            </div>
         </div>
 
     </div>
